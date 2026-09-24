@@ -214,6 +214,7 @@ Every call into `InventoryRepository` from `OrderService` goes through:
 You can see the circuit's current state at any time via `GET /health`.
 
 ## Roadmap
+WTC-S8ACXDBU
 
 - [ ] Swap the CSV-backed `InventoryRepository` for an H2/JDBC-backed one
   behind the same interface, to demonstrate the seam actually holding

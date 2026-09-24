@@ -36,7 +36,6 @@ public final class Main {
                 new SmsNotificationAdapter()
         ));
 
-        // Example listener: log a one-line audit trail for every order event.
         eventBus.subscribe("ORDER_RECEIVED", e -> log.info("[audit] order received: " + e.get("orderId")));
         eventBus.subscribe("ORDER_CONFIRMED", e -> log.info("[audit] order confirmed: " + e.get("orderId")));
         eventBus.subscribe("ORDER_FAILED", e -> log.info("[audit] order failed: " + e.get("orderId")));
